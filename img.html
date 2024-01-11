@@ -30,6 +30,79 @@
         <input type="range" name="doneness" type="range" min="0" max="5" step="0.5"
         <span>Well-done</span>
     </section>
+
+    <section class="toppings">
+      <span>What toppings would you like?</span>
+      <br>
+      <!-- This is where the LETTUCE checkbox goes -->
+      <input type="checkbox" id="lettuce"
+      value="lettuce" name="topping">
+      <label for="lettuce">Lettuce</label>
+      <!-- This is where the TOMATO checkbox goes -->
+
+      <input type="checkbox" id="tomato"
+      value="tomato" name="topping">
+      <label for="tomato">Tomato</label>
+
+      <!-- This is where YOUR OWN checkbox goes -->
+
+      <input type="checkbox" id="xcheese"
+      value="xcheese" name="topping">
+      <label for="xcheese">Extra Cheese</label>
+    </section>
+
+
+    <section ckass="cheesy">
+      <span>Would you like to add cheese?</span>
+      <br>
+
+      <input type="radio" name="cheese" id="yes"
+      value="yes">
+      <label for="yes">yes</label>
+     
+      <input type="radio" name="cheese" id="no"
+      value="no">
+      <label for="no">no</label>
+    </section>
+
+    <section class="bun-type">
+      <label for="bun">What type of bun would you like?</label>
+      <!-- dropdown options here -->
+      <select name="bun" id="bun">
+        <option value="sesame">Sesame</option>
+        <option value="potato">Potato</option>
+        <option value="pretzel">Pretzel</option>
+        <option value="sour dough">Sour Dough</option>
+        <option value="gluten-free">Gluten-Free</option>
+      </select>
+    </section>
+
+    <section class="sauce-selection">
+      <label for="sauce">What type of sauce would you like?</label>
+      <input type="text" list="sauces" id="sauce"
+      name="sauce">
+
+      <datalist id="sauces">
+        <option value="ketchup">Ketchup</option>
+        <option value="mayo">Mayo</option>
+        <option value="ranch">Ranch</option>
+        <option value="sriracha">Sriracha</option>
+      </datalist>
+    </section>
+
+    <section class="extra-info">
+      <label for="extra">Anything else you want to add?</label>
+      <br>
+      <textarea name="extra" id="extra" cols="40"
+      rows="30"></textarea>
+    </section>
+
+    <br>
+
+    <section class="submission">
+      <input type="submit">
+    </section>
+
       </form>
 
     </section>
